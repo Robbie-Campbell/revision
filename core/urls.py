@@ -21,7 +21,7 @@ from core import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name="home"),
+    path('', views.HomeView.as_view(), name="home"),
     path('post/<int:id>/', views.post_detail, name="post_detail"),
     path('category/<slug:slug>/', views.post_categories, name="post_categories"),
 ]

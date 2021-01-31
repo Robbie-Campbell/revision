@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 <div>
-    <h1>{{ post.title }}</h1>
-    <small>Written by: {{ post.author }} on {{ post.created }}</small>  
+    <div>
+        <h1>{{ post.title }}</h1>
+        <small>Written by: {{ post.author }} on {{ post.created }}</small>  
+    </div>
     <img class="img-fluid" src="{{ post.image.url }}" alt="image">
     <p>{{ post.content }} Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laboriosam libero atque ratione quas quae nulla aperiam veritatis similique harum. Blanditiis qui eius libero aliquam voluptatem, error optio consectetur modi.
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae odio quod consequatur. Labore eos, ea culpa illo praesentium odio error pariatur quas nobis aliquam rem reprehenderit cupiditate odit commodi libero.
